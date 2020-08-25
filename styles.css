@@ -62,11 +62,20 @@ body { margin: 0; }
   display: flex;
   justify-content: center; }
 
-.description .raphael{
+.raphael ul{
   display: flex;
   flex-direction: row;
+  width: 100%;
   justify-content: space-between;
 }
+
+.donatello ul{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+
 @media screen and (max-width:750px){
   .turtle { background-color: #87b741;
     display: flex;
@@ -125,5 +134,7 @@ body { margin: 0; }
   }
   .donatello .name { color: #bd64a8;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+  }
+
 }
