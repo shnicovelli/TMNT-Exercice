@@ -2,7 +2,10 @@
 
 body { margin: 0; }
 
-.turtle { background-color: #87b741; }
+.turtle { background-color: #87b741;
+  display: flex;
+  flex-direction: column;
+ }
 
 .name {
   background-color: #000;
@@ -13,14 +16,114 @@ body { margin: 0; }
 }
 
 .description,
-.mask { padding: 20px; }
+.mask { padding: 20px;
+  display: flex;
+  justify-content: center;
+  order: 3;
+ }
 
-.leonardo .mask { background-color: #65b7e7; }
-.raphael .mask { background-color: #ef3040; }
-.michelangelo .mask { background-color: #fcc257; }
-.donatello .mask { background-color: #bd64a8; }
+.leonardo .mask { background-color: #65b7e7;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  order: 2;
+ }
+.raphael .mask { background-color: #ef3040;
+  display: flex;
+  justify-content: center;
+  order: 2;
+ }
+.michelangelo .mask { background-color: #fcc257;
+  display: flex;
+  justify-content: flex-end;
+  order: 2;
+ }
+.donatello .mask { background-color: #bd64a8;
+  display: flex;
+  justify-content: center;
+ }
 
-.leonardo .name { color: #65b7e7; }
-.raphael .name { color: #ef3040; }
-.michelangelo .name { color: #fcc257; }
-.donatello .name { color: #bd64a8; }
+.leonardo .name { color: #65b7e7;
+  display: flex;
+  justify-content: center;
+  order: 1;
+ }
+.raphael .name { color: #ef3040;
+  display: flex;
+  justify-content: center;
+  order: 1;
+ }
+.michelangelo .name { color: #fcc257;
+  display: flex;
+  justify-content: center;
+  order: 1;
+}
+.donatello .name { color: #bd64a8;
+  display: flex;
+  justify-content: center; }
+
+.description .raphael{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media screen and (max-width:750px){
+  .turtle { background-color: #87b741;
+    display: flex;
+    flex-direction: column;
+   }
+
+  .name {
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    text-transform: uppercase;
+  }
+
+  .description,
+  .mask { padding: 20px;
+    display: flex;
+    justify-content: center;
+    order: 3;
+   }
+
+  .leonardo .mask { background-color: #65b7e7;
+    display: flex;
+    justify-content: center;
+    order: 2;
+   }
+  .raphael .mask { background-color: #ef3040;
+    display: flex;
+    justify-content: center;
+    order: 2;
+   }
+  .michelangelo .mask { background-color: #fcc257;
+    display: flex;
+    justify-content: center;
+    order: 2;
+   }
+  .donatello .mask { background-color: #bd64a8;
+    display: flex;
+    justify-content: center;
+   }
+
+  .leonardo .name { color: #65b7e7;
+    display: flex;
+    justify-content: center;
+    order: 1;
+   }
+  .raphael .name { color: #ef3040;
+    display: flex;
+    justify-content: center;
+    order: 1;
+   }
+  .michelangelo .name { color: #fcc257;
+    display: flex;
+    justify-content: center;
+    order: 1;
+  }
+  .donatello .name { color: #bd64a8;
+    display: flex;
+    justify-content: center; }
+}
