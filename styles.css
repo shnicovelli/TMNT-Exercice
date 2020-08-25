@@ -136,5 +136,16 @@ body { margin: 0; }
     display: flex;
     justify-content: center;
   }
+    .raphael ul{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
 
+    .donatello ul{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+    }
 }
